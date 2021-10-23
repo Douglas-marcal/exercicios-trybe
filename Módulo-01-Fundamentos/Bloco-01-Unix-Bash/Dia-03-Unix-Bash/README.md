@@ -1,4 +1,4 @@
-# Exercícios
+# Exercícios - Unix & Bash - Dia 03
 
 ## Parte I - Criação de arquivos e diretórios
 
