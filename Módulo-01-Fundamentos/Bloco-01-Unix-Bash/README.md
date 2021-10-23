@@ -1,4 +1,4 @@
-# Exercícios
+# Exercícios - Unix & Bash
 
 ## Parte I - Criação de arquivos e diretórios
 
