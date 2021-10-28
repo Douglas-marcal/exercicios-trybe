@@ -21,3 +21,10 @@ p {
 body {
     font-size: 16px;
 }
+/* Explora as propriedades font-style, line-height, text-align e text-decoration */
+ul {
+    font-style: italic;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: overline;
+}
