@@ -12,8 +12,10 @@ h1 {
     background-color: slategray;
 }
 /* Deixa o parágrafo com font-weigt 600 */
+/* Coloca o tamanho do parágrafo com o tamanho de 3 vezes o padrão do body */
 p {
     font-weight: 600;
+    font-size: 3rem;
 }
 /* Modifica o font-size do body para 16px */
 body {
