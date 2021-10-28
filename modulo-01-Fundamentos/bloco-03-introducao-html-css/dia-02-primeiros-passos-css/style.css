@@ -1,4 +1,6 @@
 /* Modifica o tamanho do h1 para 65 pixels */
+/* Modifica a cor do texto do h1 para laranja */
 h1 {
     font-size: 65px;
+    color: orange;
 }
