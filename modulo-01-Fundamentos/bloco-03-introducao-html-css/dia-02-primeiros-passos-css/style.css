@@ -11,3 +11,7 @@ h1 {
 .bg-color {
     background-color: slategray;
 }
+/* Deixa o parágrafo com font-weigt 600 */
+p {
+    font-weight: 600;
+}
