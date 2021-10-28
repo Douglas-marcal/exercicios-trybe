@@ -28,3 +28,16 @@ ul {
     text-align: center;
     text-decoration: overline;
 }
+
+#yellow, #red, #brown, p, ul {
+    width: fit-content;
+}
+#yellow {
+    background-color: yellow;    
+}
+#red {
+    background-color: red;
+}
+#brown {
+    background-color: brown;
+}
