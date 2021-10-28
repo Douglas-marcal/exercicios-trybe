@@ -4,3 +4,7 @@ h1 {
     font-size: 65px;
     color: orange;
 }
+/* Modifica a corde fundo da lista não ordenada */
+ul {
+    background-color: slategray;
+}
