@@ -15,3 +15,7 @@ h1 {
 p {
     font-weight: 600;
 }
+/* Modifica o font-size do body para 16px */
+body {
+    font-size: 16px;
+}
