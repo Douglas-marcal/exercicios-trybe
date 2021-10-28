@@ -5,6 +5,7 @@ h1 {
     color: orange;
 }
 /* Modifica a corde fundo da lista não ordenada */
-ul {
+/* Modificar a cor de fundo da tag p e da ul ao mesmo tempo */
+.bg-color {
     background-color: slategray;
 }
