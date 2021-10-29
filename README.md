@@ -8,12 +8,14 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 
 ## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
 
-##### Bloco 1: Introdução - Unix & Shell
+##### Bloco 1: Introdução - Unix & Bash
 
+- [X] 1-3: _Fundamentos do Desenvolvimento Web_
+- [X] 1-3: _Introdução - Unix & Shell_
 - [X] 1-3: _Unix & Bash - Parte 1_
 - [X] 1-4: _Unix & Bash - Parte 2_
 
-##### Bloco 2: Git & GitHub
+##### Bloco 2: Git, GitHub e Internet
 
 - [X] 2-1: _O que é e para que serve?_
 - [X] 2-2: _Entendendo os comandos_
@@ -21,8 +23,9 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 
 ##### Bloco 3: Introdução - HTML & CSS
 
-- [ ] 3-1: _HTML & CSS - Estruturas de página_
-- [ ] 3-2: _HTML & CSS - Primeiros passos em CSS_
+- [X] 3-1: _Introdução - HTML & CSS_
+- [X] 3-1: _HTML & CSS - Estruturas de página_
+- [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [ ] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [ ] 3-4: _HTML Semântico_
 - [ ] 3-5: _[Projeto - HTML & CSS]()_
