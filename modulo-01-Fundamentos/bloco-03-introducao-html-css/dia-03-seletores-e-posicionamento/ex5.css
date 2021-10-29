@@ -26,3 +26,10 @@ li {
 li em {
     font-weight: bold;
 }
+
+.fonte {
+    color: blue;
+}
+li.java {
+    background-color: rgb(250, 72, 241);
+}
