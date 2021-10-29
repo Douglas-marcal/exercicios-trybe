@@ -33,3 +33,32 @@ li em {
 li.java {
     background-color: rgb(250, 72, 241);
 }
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li a:hover {
+    font-weight: bold;
+}
+
+.stackoverflow a:hover {
+    color: orange;
+}
+
+.w3schools a:hover {
+    color: #059862;
+}
+
+.mdn a:hover {
+    color: black;
+}
+
+.devdocs a:hover {
+    color: rgb(216, 216, 0);
+}
+
+.trybe a:hover {
+    color: #2EC18C;
+}
