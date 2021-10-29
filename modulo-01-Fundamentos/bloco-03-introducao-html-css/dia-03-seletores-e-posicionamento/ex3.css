@@ -1,0 +1,20 @@
+h1, p {
+    text-align: center;
+}
+
+li {
+    width: fit-content;
+}
+
+li:hover {
+    background-color: black;
+    color: pink;
+}
+
+li:active {
+    color: red;
+}
+
+.list-style {
+    list-style: none;
+}
