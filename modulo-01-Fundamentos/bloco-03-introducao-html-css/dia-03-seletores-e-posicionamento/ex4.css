@@ -1,0 +1,35 @@
+div:hover {
+    border: 5px solid yellow;
+}
+
+#primaria {
+    background-color: red;
+}
+
+#secundaria {
+    background-color: orange;
+}
+
+#complementar {
+    background-color: #BAC92B;
+}
+
+#escura {
+    background-color: rgb(0, 0, 85);
+}
+
+#clara {
+    background-color: cornsilk;
+}
+
+h3 {
+    padding: 20px;
+}
+
+.maior {
+    padding: 10px;
+}
+
+.impar h3 {
+    font-style: italic;
+}

@@ -1,0 +1,64 @@
+.bg-color {
+    background-color: yellow;
+}
+
+.par {
+    color:green;
+}
+
+.impar {
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: red;
+}
+
+h1 em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+.fonte {
+    color: blue;
+}
+li.java {
+    background-color: rgb(250, 72, 241);
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li a:hover {
+    font-weight: bold;
+}
+
+.stackoverflow a:hover {
+    color: orange;
+}
+
+.w3schools a:hover {
+    color: #059862;
+}
+
+.mdn a:hover {
+    color: black;
+}
+
+.devdocs a:hover {
+    color: rgb(216, 216, 0);
+}
+
+.trybe a:hover {
+    color: #2EC18C;
+}
