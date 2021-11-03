@@ -32,3 +32,10 @@ h1, .podium {
     width: 300px;
 }
 
+.prizes {
+    text-align: center;
+}
+
+.prizes li {
+    display: inline-block;
+}
