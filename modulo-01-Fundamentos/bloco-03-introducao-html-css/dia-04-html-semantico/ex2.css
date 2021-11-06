@@ -1,6 +1,6 @@
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -22,7 +22,7 @@ header nav ul li {
     display: inline-block;
     background-color: bisque;
     padding: 5px;
-    margin: 0px 0px 0px 20px;
+    margin: 0 0 0 20px;
     border-radius: 12px;
     box-shadow: 2px 5px 4px #888888;
 }
@@ -36,6 +36,17 @@ header nav ul li {
 .main-content h2, div.photo-stomatopoda {
     text-align: center;
 }
+
+h2 {
+    padding: 20px 0;
+}
+
+.photo-stomatopoda figcaption{
+    width: 400px;
+    margin: auto;
+    font-size: 10px;
+}
+
 .aside-content {
     max-width: 20%;
     display: inline-block;
@@ -44,7 +55,6 @@ header nav ul li {
 }
 
 .references {
-    
     margin: 10px 20px;
 }
 
