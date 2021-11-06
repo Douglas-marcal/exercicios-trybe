@@ -47,6 +47,7 @@ li {
     max-width: 79%;
     display: inline-block;
     background-color: rgb(242, 232, 94);
+    box-shadow: 2px 15px 30px 2px #272F59;
 }
 
 .main-content h2, div.photo-stomatopoda {
@@ -92,8 +93,11 @@ div.side-by-side {
 .aside-content {
     max-width: 20%;
     display: inline-block;
-    position: absolute;
-    top: 50%;
+    margin: auto;
+}
+
+.aside-content , .main-content {
+    vertical-align: middle;
 }
 
 .references {
