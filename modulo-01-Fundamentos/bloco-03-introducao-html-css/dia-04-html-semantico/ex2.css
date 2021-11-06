@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: rgb(242, 218, 99);
+}
+
+header h1 {
+    background-color: rgb(39, 47, 89);
+    text-align: center;
+    padding: 20px;
+    color: rgb(235, 217, 217);
+}
+
+nav {
+    background-color: rgb(59, 63, 89);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    box-shadow: 2px 3px 15px black;
+}
+
+nav ul li {
+    display: inline-block;
+    background-color: rgb(39, 47, 89);
+    padding: 5px;
+    margin: 0 0 0 20px;
+    border-radius: 12px;
+    box-shadow: 2px 5px 4px #888888;
+    color: rgb(235, 217, 217);
+    transition-duration: 400ms;
+}
+
+nav ul li:hover {
+    background-color: black;
+    cursor: pointer;
+    box-shadow: 2px 5px 4px white;
+}
+
+li {
+    width: fit-content;
+}
+
+.main-content {
+    max-width: 79%;
+    display: inline-block;
+    background-color: rgb(242, 232, 94);
+    box-shadow: 2px 15px 30px 2px #272F59;
+}
+
+.main-content h2, div.photo-stomatopoda {
+    text-align: center;
+}
+
+h2 {
+    padding: 20px 0;
+}
+
+.photo-stomatopoda figcaption{
+    width: 400px;
+    margin: auto;
+    font-size: 10px;
+}
+
+#information {
+    margin: 25px 0 25px 40%;
+}
+
+#punch-stomatopoda h3 {
+    text-align: center;
+}
+
+div.side-by-side {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.side-by-side p {
+    display: inline-block;
+    max-width: 50%;
+    text-align: justify;
+    margin: 0 0 0 25px;
+    text-indent: 10px;
+    line-height: 1.6em;
+}
+
+.side-by-side img , .side-by-side p {
+    vertical-align: middle;
+}
+
+.aside-content {
+    max-width: 20%;
+    display: inline-block;
+    margin: auto;
+}
+
+.aside-content p {
+    margin: 0 0 0 10px;
+}
+
+.aside-content , .main-content {
+    vertical-align: middle;
+}
+
+.references {
+    padding: 15px 30px;
+}
+
+.references , footer {
+    background-color: rgb(191, 175, 96);
+}
+
+.references ul li {
+    list-style: none;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+}
+
+a {
+    text-decoration: underline;
+    color: black;
+}
