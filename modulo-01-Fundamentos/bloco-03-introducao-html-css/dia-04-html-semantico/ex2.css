@@ -27,6 +27,14 @@ header nav ul li {
     box-shadow: 2px 5px 4px #888888;
 }
 
+li {
+    width: fit-content;
+}
+
+#information {
+    margin: 25px 0 25px 40%;
+}
+
 .main-content {
     max-width: 79%;
     display: inline-block;
