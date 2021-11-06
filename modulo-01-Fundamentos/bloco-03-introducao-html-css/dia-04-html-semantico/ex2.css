@@ -17,12 +17,14 @@ header h1 {
     color: rgb(235, 217, 217);
 }
 
-header nav {
+nav {
     background-color: rgb(59, 63, 89);
     padding: 5px;
+    position: sticky;
+    top: 0;
 }
 
-header nav ul li {
+nav ul li {
     display: inline-block;
     background-color: rgb(39, 47, 89);
     padding: 5px;
@@ -33,7 +35,7 @@ header nav ul li {
     transition-duration: 400ms;
 }
 
-header nav ul li:hover {
+nav ul li:hover {
     background-color: black;
     cursor: pointer;
     box-shadow: 2px 5px 4px white;
@@ -94,6 +96,10 @@ div.side-by-side {
     max-width: 20%;
     display: inline-block;
     margin: auto;
+}
+
+.aside-content p {
+    margin: 0 0 0 10px;
 }
 
 .aside-content , .main-content {
