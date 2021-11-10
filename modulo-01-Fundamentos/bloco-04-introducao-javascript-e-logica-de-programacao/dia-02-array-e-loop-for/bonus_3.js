@@ -10,9 +10,11 @@ for (let index = 0; index < numbers.length; index += 1) {
       newNumbers.push(numbers[lastNumber] * 2)
       break;
   }
+  
   if (index < lastNumber) {
     let result = numbers[index] * numbers[index + 1]
   newNumbers.push(result)
   }
 }
+
 console.log(newNumbers)
