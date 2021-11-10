@@ -1,11 +1,11 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-for (i = 1; i < numbers.length; i += 1) {
-  for (j = 0; j < i; j += 1) {
-    if (numbers[i] > numbers[j]) {
-      let swap = numbers[i];
-      numbers[i] = numbers[j];
-      numbers[j] = swap;     
+for (let index = 1; index < numbers.length; index += 1) {
+  for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+    if (numbers[index] > numbers[secondIndex]) {
+      let position = numbers[index];
+      numbers[index] = numbers[secondIndex];
+      numbers[secondIndex] = position;
     }
   }
 }

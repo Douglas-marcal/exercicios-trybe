@@ -1,11 +1,20 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// [45, 27, 57, 1330, 560, 800, 200, 70, 945, 54]
 
-for (let i = 1; i < numbers.length; i += 1) {
-  for (let j = 0; j < i; j += 1) {
-    if (numbers[i] < numbers[j]) {
-      let position = numbers[i];
-      numbers[i] = numbers[j];
-      numbers[j] = position;
-    }
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let newNumbers = [];
+let lastNumber = numbers.length - 1
+
+for (let index = 0; index < numbers.length; index += 1) {
+  switch (index) {
+    case lastNumber:
+      newNumbers.push(numbers[lastNumber] * 2)
+      break;
+  }
+  
+  if (index < lastNumber) {
+    let result = numbers[index] * numbers[index + 1]
+  newNumbers.push(result)
   }
 }
+
+console.log(newNumbers)
