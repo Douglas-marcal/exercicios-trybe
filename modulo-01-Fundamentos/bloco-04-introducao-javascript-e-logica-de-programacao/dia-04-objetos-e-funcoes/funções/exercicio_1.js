@@ -18,4 +18,4 @@ function palindromo(string) {
   // console.log(compare)
 }
 
-console.log(palindromo('ArAra'))
+console.log(palindromo('radar'))
