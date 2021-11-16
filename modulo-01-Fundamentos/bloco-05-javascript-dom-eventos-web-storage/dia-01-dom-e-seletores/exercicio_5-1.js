@@ -14,3 +14,7 @@ fixH1.innerText = 'Exercício 5.1 - JavaScript';
 for (let index = 0; index < upperCase.length; index += 1) {
   upperCase[index].style = 'text-transform: uppercase';
 }
+
+for (let index = 0; index < upperCase.length; index += 1) {
+  console.log(upperCase[index].innerText)
+}
