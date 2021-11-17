@@ -21,3 +21,8 @@ main.appendChild(section);
 const p = document.createElement('p');
 p.innerText = 'Lorem ipsum indolor, same slatuto.';
 section.appendChild(p);
+
+// - 5
+const section2 = document.createElement('section');
+section2.classList.add('left-content');
+main.appendChild(section2);
