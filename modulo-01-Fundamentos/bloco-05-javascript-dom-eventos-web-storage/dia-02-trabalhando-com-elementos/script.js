@@ -73,3 +73,11 @@ ul.appendChild(li9);
 li9.innerText = 'Nove';
 ul.appendChild(li10);
 li10.innerText = 'Dez';
+
+// - 9
+const firstH3 = document.createElement('h3');
+const secondH3 = document.createElement('h3');
+const thirdH3 = document.createElement('h3');
+main.appendChild(firstH3);
+main.appendChild(secondH3);
+main.appendChild(thirdH3);
