@@ -16,3 +16,8 @@ body.appendChild(main);
 const section = document.createElement('section');
 section.className = 'center-content';
 main.appendChild(section);
+
+// - 4
+const p = document.createElement('p');
+p.innerText = 'Lorem ipsum indolor, same slatuto.';
+section.appendChild(p);
