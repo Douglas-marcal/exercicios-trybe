@@ -97,3 +97,7 @@ paiSection.removeChild(section2);
 
 // - 4
 section3.style = 'margin-right: auto';
+
+// - 5
+let greenColor = document.querySelector('.center-content');
+greenColor.style = 'background-color: green';
