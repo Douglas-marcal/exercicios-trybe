@@ -26,3 +26,8 @@ section.appendChild(p);
 const section2 = document.createElement('section');
 section2.classList.add('left-content');
 main.appendChild(section2);
+
+// - 6
+const section3 = document.createElement('section');
+section3.className = 'right-content';
+main.appendChild(section3);
