@@ -85,3 +85,8 @@ main.appendChild(thirdH3);
 // --------------------------------------------------//
 // - 1
 h1.classList.add('title');
+
+// - 2
+firstH3.classList.add('description');
+secondH3.classList.add('description');
+thirdH3.classList.add('description');
