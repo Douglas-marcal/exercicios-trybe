@@ -31,3 +31,10 @@ main.appendChild(section2);
 const section3 = document.createElement('section');
 section3.className = 'right-content';
 main.appendChild(section3);
+
+// - 7
+const img = document.createElement('img');
+img.classList.add('small-image');
+img.src = 'https://picsum.photos/200';
+img.alt = 'Fotos aleatórias';
+section2.appendChild(img);
