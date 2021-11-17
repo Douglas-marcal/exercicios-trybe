@@ -90,3 +90,7 @@ h1.classList.add('title');
 firstH3.classList.add('description');
 secondH3.classList.add('description');
 thirdH3.classList.add('description');
+
+// - 3
+let paiSection = document.querySelector('.left-content').parentNode;
+paiSection.removeChild(section2);
