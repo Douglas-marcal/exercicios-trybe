@@ -81,3 +81,7 @@ const thirdH3 = document.createElement('h3');
 main.appendChild(firstH3);
 main.appendChild(secondH3);
 main.appendChild(thirdH3);
+
+// --------------------------------------------------//
+// - 1
+h1.classList.add('title');
