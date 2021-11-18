@@ -54,10 +54,13 @@ let orderedNumbers = [
 ]
 
 const ul = document.createElement('ul');
-console.log(ul)
+section3.appendChild(ul)
 
-
-
+for (let index = 0; index < orderedNumbers.length; index += 1) {
+  const li = document.createElement('li');
+  li.innerText = orderedNumbers[index];
+  ul.appendChild(li)
+}
 
 // const li1 = document.createElement('li');
 // const li2 = document.createElement('li');
@@ -102,23 +105,23 @@ main.appendChild(thirdH3);
 
 // --------------------------------------------------//
 // - 1
-h1.classList.add('title');
+// h1.classList.add('title');
 
-// - 2
-firstH3.classList.add('description');
-secondH3.classList.add('description');
-thirdH3.classList.add('description');
+// // - 2
+// firstH3.classList.add('description');
+// secondH3.classList.add('description');
+// thirdH3.classList.add('description');
 
-// - 3
-let paiSection = document.querySelector('.left-content').parentNode;
-paiSection.removeChild(section2);
+// // - 3
+// let paiSection = document.querySelector('.left-content').parentNode;
+// paiSection.removeChild(section2);
 
-// - 4
-section3.style = 'margin-right: auto';
+// // - 4
+// section3.style = 'margin-right: auto';
 
-// - 5
-let greenColor = document.querySelector('.center-content');
-greenColor.style = 'background-color: green';
+// // - 5
+// let greenColor = document.querySelector('.center-content');
+// greenColor.style = 'background-color: green';
 
 // - 6
 // const deleteItems = document.querySelectorAll('ul');
