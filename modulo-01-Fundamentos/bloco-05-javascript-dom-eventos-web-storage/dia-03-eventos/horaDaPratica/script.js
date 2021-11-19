@@ -44,3 +44,15 @@ function createButton(feriados) {
 }
 
 createButton('Feriados');
+
+function highlightHolidays(event) {
+  
+  if (event.target.id.contains('btn-holiday')) {
+    event.target.style.backgroundColor = 'red'
+  } else {
+    event.target.style.backgroundColor = 'blue'
+  }
+}
+
+const button = document.querySelector('#btn-holiday');
+button.addEventListener('click', highlightHolidays);
