@@ -29,7 +29,18 @@ function addDays() {
       day.classList.add('friday');
     }
     daysUl.appendChild(day);
-  }
+  };
+};
+
+addDays();
+
+// - 2
+function createButton(feriados) {
+  const buttonsContainer = document.querySelector('.buttons-container');
+  const button = document.createElement('button');
+  button.id = 'btn-holiday';
+  button.innerText = feriados;
+  buttonsContainer.appendChild(button);
 }
 
-addDays()
+createButton('Feriados');
