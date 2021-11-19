@@ -35,6 +35,7 @@ input.addEventListener('change', (event) => {
 const top3 = document.querySelector('#my-spotrybefy');
 top3.addEventListener('dblclick', () => {
   window.location.href = 'https://douglas-marcal.github.io/';
+  // window.open('https://douglas-marcal.github.io/', '_blank');
 })
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
