@@ -45,13 +45,17 @@ function createButton(feriados) {
 
 createButton('Feriados');
 
-function highlightHolidays(event) {
-  
-  if (event.target.id.contains('btn-holiday')) {
-    event.target.style.backgroundColor = 'red'
-  } else {
-    event.target.style.backgroundColor = 'blue'
-  }
+// - 3
+function highlightHolidays() {
+  const holidays = document.querySelectorAll('.holiday');
+    for (let index = 0; index < holidays.length; index += 1) {
+      if (holidays[index].style.backgroundColor !== 'rgb(165, 255, 241)') {
+        holidays[index].style.backgroundColor = 'rgb(165, 255, 241)';
+      } else {
+        holidays[index].style.backgroundColor = 'rgb(238,238,238)'
+      }
+      console.log(holidays[index].style.backgroundColor)
+    }
 }
 
 const button = document.querySelector('#btn-holiday');
