@@ -60,3 +60,14 @@ function highlightHolidays() {
 
 const button = document.querySelector('#btn-holiday');
 button.addEventListener('click', highlightHolidays);
+
+// - 4
+function createButtonFriday(day) {
+  const buttonsContainer = document.querySelector('.buttons-container');
+  const buttonFriday = document.createElement('button');
+  buttonFriday.id = 'btn-friday';
+  buttonFriday.innerText = day;
+  buttonsContainer.appendChild(buttonFriday);
+}
+
+createButtonFriday('Sexta-feira');
