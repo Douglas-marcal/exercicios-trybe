@@ -154,4 +154,13 @@ buttonAdd.addEventListener('click', () => {
   } else {
     alert('Campo vazio! Escreva algo.');
   }
+});
+
+taskInput.addEventListener('keyup', (event) => {
+  if (taskInput.value !== '' && event.key === 'Enter') {
+    const createListItem = document.createElement('li');
+    createListItem.innerText = taskInput.value;
+    taskList.appendChild(createListItem);
+    taskInput.value = ''
+  }
 })
