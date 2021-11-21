@@ -140,3 +140,18 @@ days.addEventListener('click', event => {
     }
   }
 });
+
+// - Bônus
+const taskList = document.querySelector('.task-list');
+const taskInput = document.querySelector('#task-input');
+const buttonAdd = document.querySelector('#btn-add');
+buttonAdd.addEventListener('click', () => {
+  if (taskInput.value !== '') {
+    const createListItem = document.createElement('li');
+    createListItem.innerText = taskInput.value;
+    taskList.appendChild(createListItem);
+    taskInput.value = ''
+  } else {
+    alert('Campo vazio! Escreva algo.');
+  }
+})
