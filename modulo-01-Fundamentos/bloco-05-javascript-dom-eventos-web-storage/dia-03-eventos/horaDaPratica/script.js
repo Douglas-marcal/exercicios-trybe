@@ -100,3 +100,13 @@ days.addEventListener('mouseout', (event) => {
   if (event.target.id !== 'days');
   event.target.style.transform = 'scale(1.0)';
 });
+
+// - 7
+function createTask(task) {
+  const parentDiv = document.querySelector('.my-tasks');
+  const span = document.createElement('span');
+  span.innerText += task + '\n';
+  parentDiv.appendChild(span);
+}
+
+createTask('Cozinhar');
