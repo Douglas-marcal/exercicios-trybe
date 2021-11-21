@@ -123,3 +123,9 @@ function addColorTaks(color) {
 }
 
 addColorTaks('lightblue');
+
+// - 9
+const divTask = document.querySelector('.task');
+divTask.addEventListener('click', () => {
+  divTask.classList.toggle('selected');
+});
