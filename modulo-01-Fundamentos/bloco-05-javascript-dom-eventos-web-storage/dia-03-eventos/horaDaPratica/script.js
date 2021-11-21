@@ -129,3 +129,14 @@ const divTask = document.querySelector('.task');
 divTask.addEventListener('click', () => {
   divTask.classList.toggle('selected');
 });
+
+// - 10
+days.addEventListener('click', event => {
+  if (divTask.classList.contains('selected')) {
+    if (event.target.style.color !== 'lightblue') {
+      event.target.style.color = 'lightblue';
+    } else {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  }
+});
