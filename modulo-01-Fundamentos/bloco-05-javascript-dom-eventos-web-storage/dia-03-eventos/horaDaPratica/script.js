@@ -1,5 +1,5 @@
 function createDaysOfTheWeek() {
-  const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
+  const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
   const weekDaysList = document.querySelector('.week-days');
 
   for (let index = 0; index < weekDays.length; index += 1) {
@@ -52,9 +52,9 @@ function highlightHolidays() {
       if (holidays[index].style.backgroundColor !== 'rgb(165, 255, 241)') {
         holidays[index].style.backgroundColor = 'rgb(165, 255, 241)';
       } else {
-        holidays[index].style.backgroundColor = 'rgb(238,238,238)'
+        holidays[index].style.backgroundColor = 'rgb(238,238,238)';
       }
-      console.log(holidays[index].style.backgroundColor)
+      // console.log(holidays[index].style.backgroundColor);
     }
 }
 
@@ -76,7 +76,7 @@ createButtonFriday('Sexta-feira');
 const buttonFriday = document.querySelector('#btn-friday');
 buttonFriday.addEventListener('click', () => {
   const friday = document.querySelectorAll('.friday');
-  let fridayDecember = []
+  let fridayDecember = [];
   for (let index = 4; index < 26; index += 7) {
     fridayDecember.push(index);
   }
@@ -84,7 +84,19 @@ buttonFriday.addEventListener('click', () => {
     if (friday[index].innerText !== 'Dia de Maldade!') {
       friday[index].innerText = 'Dia de Maldade!';
     } else {
-      friday[index].innerText = fridayDecember[index]
+      friday[index].innerText = fridayDecember[index];
     }
   }
-})
+});
+
+// - 6
+const days = document.querySelector('#days');
+days.addEventListener('mouseover', (event) => {
+  if (event.target.id !== 'days');
+  event.target.style.transform = 'scale(1.3)';
+});
+
+days.addEventListener('mouseout', (event) => {
+  if (event.target.id !== 'days');
+  event.target.style.transform = 'scale(1.0)';
+});
