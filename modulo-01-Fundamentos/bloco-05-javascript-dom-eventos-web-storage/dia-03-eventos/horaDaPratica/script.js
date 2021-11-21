@@ -122,4 +122,4 @@ function addColorTaks(color) {
   parentDiv.appendChild(div);
 }
 
-addColorTaks('red')
+addColorTaks('lightblue');
