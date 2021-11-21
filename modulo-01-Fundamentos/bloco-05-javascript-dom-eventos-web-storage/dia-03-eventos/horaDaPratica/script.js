@@ -93,20 +93,33 @@ buttonFriday.addEventListener('click', () => {
 const days = document.querySelector('#days');
 days.addEventListener('mouseover', (event) => {
   if (event.target.id !== 'days');
-  event.target.style.transform = 'scale(1.3)';
+  event.target.style.fontSize = '30px';
+  event.target.style.transition = '300ms'
 });
 
 days.addEventListener('mouseout', (event) => {
   if (event.target.id !== 'days');
-  event.target.style.transform = 'scale(1.0)';
+  event.target.style.fontSize = '20px';
+  event.target.style.transition = '300ms'
 });
 
 // - 7
+const parentDiv = document.querySelector('.my-tasks');
+
 function createTask(task) {
-  const parentDiv = document.querySelector('.my-tasks');
   const span = document.createElement('span');
-  span.innerText += task + '\n';
+  span.innerText += task;
   parentDiv.appendChild(span);
 }
 
 createTask('Cozinhar');
+
+// - 8
+function addColorTaks(color) {
+  const div = document.createElement('div');
+  div.classList.add('task');
+  div.style.backgroundColor = color;
+  parentDiv.appendChild(div);
+}
+
+addColorTaks('red')
