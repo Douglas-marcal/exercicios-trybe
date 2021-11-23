@@ -46,7 +46,7 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [X] 5-3: _JavaScript - Eventos_
 - [X] 5-4: _JavaScript - Web Storage_
 - [ ] 5-5: _Fundamentos - JavaScript - Projetos_
-- [ ] 5-5: _[Projeto - Arte com Pixels]()_
+- [X] 5-5: _[Projeto - Arte com Pixels](https://douglas-marcal.github.io/projetos/pixels-art/)_
 - [ ] 5-6: _[Projeto - Lista de Tarefas]()_
 - [ ] 5-7: _[Projeto Bônus - Meme Generator]()_
 - [ ] 5-7: _[Projeto Bônus - Adivinhe a Cor]()_
