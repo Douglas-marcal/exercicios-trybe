@@ -34,8 +34,12 @@
   </fieldset>
   <fieldset>
     <legend>Dados do último emprego</legend>
-    <label for="input-abstrat">Resumo do Currículo</label>
-    <textarea name="abstrat" id="input-abstrat" cols="30" rows="5" required placeholder="Conte um pouco sobre sua trajetória."></textarea>
+    <label for="input-abstrat">Resumo do Currículo:</label>
+    <textarea name="abstrat" id="input-abstrat" cols="30" rows="5" maxlength="1000" required placeholder="Conte um pouco sobre sua trajetória."></textarea>
+    <label for="input-position-company">Cargo:</label>
+    <input type="text" name="input-position-company" id="input-position-company" required maxlength="40">
+    <label for="input-position-company-description">Descrição do Cargo:</label>
+    <input type="text" name="input-position-company-description" id="input-position-company-description" required maxlength="500">
   </fieldset>
   <script src="script.js"></script>
 </body>
