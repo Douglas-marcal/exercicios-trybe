@@ -10,7 +10,7 @@
 <body>
   <fieldset>
     <label for="input-text">Nome:</label>
-    <input type="text" name="name" id="input-text" placeholder="Ex: Douglas Nascimento" maxlength="40" required>
+    <input type="text" name="name" id="input-text" placeholder="Ex: Douglas Nascimento" maxlength="40" required autofocus>
     <label for="input-email">E-mail:</label>
     <input type="email" name="email" id="input-email" placeholder="Ex: douglas@exemplo.com" maxlength="50" required>
     <label for="input-cpf">CPF:</label>
@@ -21,6 +21,15 @@
     <select name="states" id="select-states" required placeholder>
       <option value="" disabled selected>Selecione um Estado</option>
     </select>
+    <p>Tipo de Residência:</p>
+    <label for="input-home">Casa</label>
+    <input type="radio" name="home" value="house" id="input-home">
+    <label for="input-apartament">Apartamento</label>
+    <input type="radio" name="home" value="apartament" id="input-apartament">
+    <label for="input-condominium">Condomínio</label>
+    <input type="radio" name="home" value="condominium" id="input-condominium">
+    <label for="input-other">Outro</label>
+    <input type="radio" name="home" id="input-other">
   </fieldset>
   <script src="script.js"></script>
 </body>
