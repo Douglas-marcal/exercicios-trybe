@@ -5,18 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulário</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap-reboot.min.css">
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
   <form action="" method="get">
     <fieldset>
       <legend>Dados Pessoais</legend>
-      <label for="input-text">Nome:</label>
+      <label for="input-text">Nome Completo:</label>
       <input type="text" name="name" id="input-text" placeholder="Ex: Douglas Nascimento" maxlength="40" required autofocus>
       <label for="input-email">E-mail:</label>
       <input type="email" name="email" id="input-email" placeholder="Ex: douglas@exemplo.com" maxlength="50" required>
       <label for="input-cpf">CPF:</label>
-      <input type="number" name="cpf" id="input-cpf" placeholder="Ex: 012.345.678-90" min="2" max="50" required maxlength="14">
+      <input type="text" name="cpf" id="input-cpf" placeholder="Ex: 012.345.678-90" min="2" max="50" required maxlength="14">
       <label for="input-adress">Endereço:</label>
       <input type="text" name="adress" id="input-adress" required maxlength="200" placeholder="Rua João Camargo, 200">
       <label for="select-states">Qual seu Estado?</label>
