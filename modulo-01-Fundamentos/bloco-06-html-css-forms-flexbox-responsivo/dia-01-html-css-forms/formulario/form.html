@@ -82,10 +82,14 @@
                 class="form-select"
                 id="select-states"
                 required>
-          <option value="" disabled selected>Selecione um Estado</option>
+          <option value="" 
+                  disabled 
+                  selected>
+                  Selecione um Estado</option>
         </select>
       </div>
       <div class="mb-3 form-check">
+
         <p class="lead">Tipo de Residência:</p>
 
         <div class="form-check">
@@ -103,39 +107,82 @@
           <label for="input-apartament"
                  class="form-check-label">
                  Apartamento</label>
-          <input type="radio" name="home" value="apartament" id="input-apartament" class="form-check-input">
+          <input type="radio" name="home"
+                 value="apartament" 
+                 id="input-apartament" 
+                 class="form-check-input">
         </div>
 
         <div class="form-check">
-          <label for="input-condominium">Condomínio</label>
-          <input type="radio" name="home" value="condominium" id="input-condominium" class="form-check-input">
+          <label class="form-check-label"
+                 for="input-condominium">Condomínio</label>
+
+          <input type="radio" 
+                 name="home" 
+                 value="condominium" 
+                 id="input-condominium" 
+                 class="form-check-input">
         </div>
 
         <div class="form-check">
-          <label for="input-other">Outro</label>
-          <input type="radio" name="home" id="input-other" class="form-check-input">
+          <label for="input-other"
+                 class="form-check-label">Outro</label>
+          <input type="radio" name="home" 
+                 id="input-other" 
+                 class="form-check-input">
         </div>
       </div>
 
-      <legend>Dados do último emprego</legend>
+      <p class="display-6 text-center text-muted">Dados do último emprego</p>
       <div class="mb-3">
-        <label for="input-abstrat">Resumo do Currículo:</label>
-        <textarea name="abstrat" id="input-abstrat" cols="30" rows="5" maxlength="1000" required placeholder="Conte um pouco sobre sua trajetória."></textarea>
+        <label for="input-abstrat"
+               class="form-label">Resumo do Currículo:</label>
+        <textarea name="abstrat"
+                  class="form-control" 
+                  id="input-abstrat" 
+                  cols="30" 
+                  rows="5" 
+                  maxlength="1000" 
+                  required 
+                  placeholder="Conte um pouco sobre sua trajetória."></textarea>
       </div>
       <div class="mb-3">
-        <label for="input-position-company">Cargo:</label>
-        <input type="text" name="input-position-company" id="input-position-company" required maxlength="40">
+        <label for="input-position-company"
+               class="form-label">Cargo:</label>
+
+        <input type="text" 
+               class="form-control"
+               name="input-position-company" 
+               id="input-position-company" 
+               required maxlength="40">
       </div>
       <div class="mb-3">
-        <label for="input-position-company-description">Descrição do Cargo:</label>
-        <input type="text" name="input-position-company-description" id="input-position-company-description" required maxlength="500">
-      </div>
-      <div class="mb-3">
-        <label for="input-date">Data de Início:</label>
-        <input type="text" name="date" id="input-date" required placeholder="Ex: dd/mm/aaaa">
+        <label class="form-label"
+               for="input-position-company-description">Descrição do Cargo:</label>
+
+        <input type="text"
+               name="input-position-company-description" 
+               id="input-position-company-description" 
+               class="form-control"
+               required maxlength="500">
       </div>
 
-    <button type="submit" id="button-submit">Enviar</button>
+      <div class="mb-3">
+        <label class="form-label"
+               for="input-date">Data de Início:</label>
+        <input type="text" 
+               name="date" 
+               id="input-date"
+               class="form-control" 
+               required 
+               placeholder="Ex: dd/mm/aaaa">
+      </div>
+
+    <div class="d-grid gap-2 col-6 mx-auto mb-3">
+      <button type="submit" 
+              id="button-submit" 
+              class="btn btn-primary">Enviar</button>
+    </div>
   </form>
 </body>
 </html>
