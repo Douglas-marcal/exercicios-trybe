@@ -13,38 +13,58 @@
   <form action="" method="get">
     <fieldset>
       <legend>Dados Pessoais</legend>
-      <label for="input-text">Nome Completo:</label>
-      <input type="text" name="name" id="input-text" placeholder="Ex: Douglas Nascimento" maxlength="40" required autofocus>
-      <label for="input-email">E-mail:</label>
-      <input type="email" name="email" id="input-email" placeholder="Ex: douglas@exemplo.com" maxlength="50" required>
-      <label for="input-cpf">CPF:</label>
-      <input type="text" name="cpf" id="input-cpf" placeholder="Ex: 012.345.678-90" min="2" max="50" required maxlength="14">
-      <label for="input-adress">Endereço:</label>
-      <input type="text" name="adress" id="input-adress" required maxlength="200" placeholder="Rua João Camargo, 200">
-      <label for="select-states">Qual seu Estado?</label>
-      <select name="states" id="select-states" required placeholder>
-        <option value="" disabled selected>Selecione um Estado</option>
-      </select>
-      <p>Tipo de Residência:</p>
-      <label for="input-home">Casa</label>
-      <input type="radio" name="home" value="house" id="input-home" checked>
-      <label for="input-apartament">Apartamento</label>
-      <input type="radio" name="home" value="apartament" id="input-apartament">
-      <label for="input-condominium">Condomínio</label>
-      <input type="radio" name="home" value="condominium" id="input-condominium">
-      <label for="input-other">Outro</label>
-      <input type="radio" name="home" id="input-other">
+      <div>
+        <label for="input-text">Nome Completo:</label>
+        <input type="text" name="name" id="input-text" placeholder="Ex: Douglas Nascimento" maxlength="40" required autofocus>
+      </div>
+      <div>
+        <label for="input-email">E-mail:</label>
+        <input type="email" name="email" id="input-email" placeholder="Ex: douglas@exemplo.com" maxlength="50" required>
+      </div>
+      <div>
+        <label for="input-cpf">CPF:</label>
+        <input type="text" name="cpf" id="input-cpf" placeholder="Ex: 012.345.678-90" min="2" max="50" required maxlength="14">
+      </div>
+      <div>
+        <label for="input-adress">Endereço:</label>
+        <input type="text" name="adress" id="input-adress" required maxlength="200" placeholder="Rua João Camargo, 200">
+      </div>
+      <div>
+        <label for="select-states">Qual seu Estado?</label>
+        <select name="states" id="select-states" required placeholder>
+          <option value="" disabled selected>Selecione um Estado</option>
+        </select>
+      </div>
+      <div>
+        <p>Tipo de Residência:</p>
+        <label for="input-home">Casa</label>
+        <input type="radio" name="home" value="house" id="input-home" checked>
+        <label for="input-apartament">Apartamento</label>
+        <input type="radio" name="home" value="apartament" id="input-apartament">
+        <label for="input-condominium">Condomínio</label>
+        <input type="radio" name="home" value="condominium" id="input-condominium">
+        <label for="input-other">Outro</label>
+        <input type="radio" name="home" id="input-other">
+      </div>
     </fieldset>
     <fieldset>
       <legend>Dados do último emprego</legend>
-      <label for="input-abstrat">Resumo do Currículo:</label>
-      <textarea name="abstrat" id="input-abstrat" cols="30" rows="5" maxlength="1000" required placeholder="Conte um pouco sobre sua trajetória."></textarea>
-      <label for="input-position-company">Cargo:</label>
-      <input type="text" name="input-position-company" id="input-position-company" required maxlength="40">
-      <label for="input-position-company-description">Descrição do Cargo:</label>
-      <input type="text" name="input-position-company-description" id="input-position-company-description" required maxlength="500">
-      <label for="input-date">Data de Início:</label>
-      <input type="text" name="date" id="input-date" required placeholder="Ex: dd/mm/aaaa">
+      <div>
+        <label for="input-abstrat">Resumo do Currículo:</label>
+        <textarea name="abstrat" id="input-abstrat" cols="30" rows="5" maxlength="1000" required placeholder="Conte um pouco sobre sua trajetória."></textarea>
+      </div>
+      <div>
+        <label for="input-position-company">Cargo:</label>
+        <input type="text" name="input-position-company" id="input-position-company" required maxlength="40">
+      </div>
+      <div>
+        <label for="input-position-company-description">Descrição do Cargo:</label>
+        <input type="text" name="input-position-company-description" id="input-position-company-description" required maxlength="500">
+      </div>
+      <div>
+        <label for="input-date">Data de Início:</label>
+        <input type="text" name="date" id="input-date" required placeholder="Ex: dd/mm/aaaa">
+      </div>
     </fieldset>
     <button type="submit" id="button-submit">Enviar</button>
   </form>
