@@ -1,5 +1,6 @@
 const buttonSubmit = document.querySelector('#button-submit');
-const allInput = document.querySelectorAll('input')
+const allInput = document.querySelectorAll('input');
+const inputDate = document.querySelector('#input-date');
 const brazil = {
   'AC': 'Acre',
   'AL': 'Alagoas',
@@ -40,16 +41,24 @@ for (let state in brazil) {
   selectStates.appendChild(createOption)
 }
 
-function submitForm(event) {
-  event.preventDefault()
-  console.log(allInput)
-  for (let index = 0; index < allInput.length; index += 1) {
-    if (allInput[index].value.trim() === '') {
-      alert('Preencha os campos obrigatórios!');
-      allInput[index].value = ''
-      break;
-    }
-  }
-}
+// function submitForm(event) {
+//   event.preventDefault()
+//   console.log(allInput)
+//   for (let index = 0; index < allInput.length; index += 1) {
+//     if (allInput[index].value.trim() === '') {
+//       alert('Preencha os campos obrigatórios!');
+//       allInput[index].value = ''
+//       break;
+//     }
+//   }
+// }
 
-buttonSubmit.addEventListener('click', submitForm);
+// buttonSubmit.addEventListener('click', submitForm);
+
+$('#input-date').datetimepicker({
+  timepicker: false,
+  datepicker: true,
+  format: 'dd, mm, yyyy',
+  value: '27-11-2021',
+  weeks: true,
+})
