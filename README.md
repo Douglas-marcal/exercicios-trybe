@@ -45,17 +45,17 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 - [X] 5-2: _JavaScript - Trabalhando com elementos_
 - [X] 5-3: _JavaScript - Eventos_
 - [X] 5-4: _JavaScript - Web Storage_
-- [ ] 5-5: _Fundamentos - JavaScript - Projetos_
+- [X] 5-5: _Fundamentos - JavaScript - Projetos_
 - [X] 5-5: _[Projeto - Arte com Pixels](https://douglas-marcal.github.io/projetos/pixels-art/)_
-- [ ] 5-6: _[Projeto - Lista de Tarefas]()_
-- [ ] 5-7: _[Projeto Bônus - Meme Generator]()_
-- [ ] 5-7: _[Projeto Bônus - Adivinhe a Cor]()_
-- [ ] 5-7: _[Projeto Bônus - Carta Misteriosa]()_
+- [X] 5-6: _[Projeto - Lista de Tarefas](https://douglas-marcal.github.io/projetos/to-do-list/)_
+- [X] 5-7: _[Projeto Bônus - Meme Generator]()_
+- [X] 5-7: _[Projeto Bônus - Adivinhe a Cor](https://douglas-marcal.github.io/projetos/color-guess/)_
+- [X] 5-7: _[Projeto Bônus - Carta Misteriosa](https://douglas-marcal.github.io/projetos/mistery-letter/)_
 
 ##### Bloco 6: HTML & CSS: Forms, Flexbox e Responsivo
 
-- [ ] 6-1: _HTML & CSS - Forms_
-- [ ] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
+- [X] 6-1: _HTML & CSS - Forms_
+- [X] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
 - [ ] 6-3: _Introdução - CSS Flexbox_
 - [ ] 6-3: _CSS Flexbox - Part 1_
 - [ ] 6-4: _CSS Flexbox - Part 2_

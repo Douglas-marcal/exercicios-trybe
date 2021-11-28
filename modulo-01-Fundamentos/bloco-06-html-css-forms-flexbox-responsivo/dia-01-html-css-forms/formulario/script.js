@@ -55,10 +55,4 @@ for (let state in brazil) {
 
 // buttonSubmit.addEventListener('click', submitForm);
 
-$('#input-date').datetimepicker({
-  timepicker: false,
-  datepicker: true,
-  format: 'dd, mm, yyyy',
-  value: '27-11-2021',
-  weeks: true,
-})
+// inputDate.value
