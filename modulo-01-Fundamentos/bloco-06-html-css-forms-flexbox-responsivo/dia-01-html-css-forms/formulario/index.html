@@ -7,10 +7,10 @@
   <title>Formulário</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" type="modules" defer></script>
+  <script src="script.js" type="modules"></script>
 </head>
 <body class="bg-dark text-light">
-  <form action="" method="get" class="container js-form">
+  <form action="" method="get" class="js-form container">
       <h2 class="display-5 text-muted text-center pt-4">Dados Pessoais</h2>
       <div class="mb-3">
         
@@ -24,8 +24,7 @@
                id="input-text" 
                class="form-control"
                placeholder="Ex: Douglas Nascimento" 
-               maxlength="40" 
-               autofocus>
+               >
       </div>
       
       <div class="mb-3">
@@ -41,8 +40,7 @@
                class="form-control"
                id="input-email" 
                placeholder="Ex: douglas@exemplo.com" 
-               maxlength="50" 
-               required>
+               >
       </div>
 
       <div class="mb-3">
@@ -55,10 +53,7 @@
                class="form-control"
                id="input-cpf" 
                placeholder="Ex: 012.345.678-90" 
-               min="2" 
-               max="50" 
-               required 
-               maxlength="14">
+               >
       </div>
 
       <div class="mb-3">
@@ -70,8 +65,7 @@
                name="adress" 
                class="form-control"
                id="input-adress" 
-               required 
-               maxlength="200" 
+               
                placeholder="Rua João Camargo, 200">
       </div>
 
@@ -83,7 +77,7 @@
         <select name="states"
                 class="form-select"
                 id="select-states"
-                required>
+            >
           <option value="" 
                   disabled 
                   selected>
@@ -144,8 +138,6 @@
                   id="input-abstrat" 
                   cols="30" 
                   rows="5" 
-                  maxlength="1000" 
-                  required 
                   placeholder="Conte um pouco sobre sua trajetória."></textarea>
       </div>
       <div class="mb-3">
@@ -156,7 +148,7 @@
                class="form-control"
                name="input-position-company" 
                id="input-position-company" 
-               required maxlength="40">
+               >
       </div>
       <div class="mb-3">
         <label class="form-label"
@@ -166,7 +158,7 @@
                name="input-position-company-description" 
                id="input-position-company-description" 
                class="form-control"
-               required maxlength="500">
+              >
       </div>
 
       <div class="mb-3">
@@ -176,14 +168,14 @@
                name="date" 
                id="input-date"
                class="form-control" 
-               required>
+              >
       </div>
 
-    <div class="d-grid gap-2 col-6 mx-auto mb-3">
-      <button type="submit" 
-              id="button-submit" 
-              class="btn btn-primary mb-4 mt-4">Enviar</button>
-    </div>
-  </form>
+      <div class="d-grid gap-2 col-6 mx-auto mb-3">
+             <button type="submit" 
+                id="button-submit" 
+                class="btn btn-primary mb-4 mt-4">Enviar</button>
+              </div>
+       </form>
 </body>
 </html>
