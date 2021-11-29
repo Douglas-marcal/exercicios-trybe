@@ -1,8 +1,8 @@
-import '../../../../node_modules/just-validate/dist/js/just-validate.js'
+import './node_modules/just-validate/dist/js/just-validate.js'
 
-const buttonSubmit = document.querySelector('#button-submit');
-const allInput = document.querySelectorAll('input');
-const inputDate = document.querySelector('#input-date');
+// const buttonSubmit = document.querySelector('#button-submit');
+// const allInput = document.querySelectorAll('input');
+// const inputDate = document.querySelector('#input-date');
 const brazil = {
   'AC': 'Acre',
   'AL': 'Alagoas',
@@ -49,19 +49,16 @@ addOptionOnScreen()
 
 
 
-  new window.JustValidate('.js-form', {
-    rules: {
-      name: {
-        required: true,
-        minLength: 3,
-      }
-    },
-    message: {
-      name: {
-        minLength: 'teste'
-      }
+new JustValidate('.js-form', {
+  rules: {
+    name: {
+      required: true,
     }
-  })
+  },
+  submitHandler: function (form, values) {
+    console.log(form, values);
+  }
+})
 
 
 // function submitForm(event) {
