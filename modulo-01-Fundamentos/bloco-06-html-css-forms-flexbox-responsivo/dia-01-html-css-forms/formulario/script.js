@@ -1,3 +1,5 @@
+import '../../../../node_modules/just-validate/dist/js/just-validate.js'
+
 const buttonSubmit = document.querySelector('#button-submit');
 const allInput = document.querySelectorAll('input');
 const inputDate = document.querySelector('#input-date');
@@ -31,15 +33,36 @@ const brazil = {
   'TO': 'Tocantins',
 }
 
-const selectStates = document.querySelector('#select-states');
-
-for (let state in brazil) {
-  // console.log(brazil[state]);
-  const createOption = document.createElement('option')
-  createOption.setAttribute('value', state)
-  createOption.textContent = brazil[state]
-  selectStates.appendChild(createOption)
+function addOptionOnScreen() {
+  const selectStates = document.querySelector('#select-states');
+  for (let state in brazil) {
+    // console.log(brazil[state]);s
+    const createOption = document.createElement('option')
+    createOption.setAttribute('value', state)
+    createOption.textContent = brazil[state]
+    selectStates.appendChild(createOption)
+  }
 }
+
+addOptionOnScreen()
+// buttonSubmit.addEventListener('click', (event) => { event.preventDefault() })
+
+
+
+  new window.JustValidate('.js-form', {
+    rules: {
+      name: {
+        required: true,
+        minLength: 3,
+      }
+    },
+    message: {
+      name: {
+        minLength: 'teste'
+      }
+    }
+  })
+
 
 // function submitForm(event) {
 //   event.preventDefault()
