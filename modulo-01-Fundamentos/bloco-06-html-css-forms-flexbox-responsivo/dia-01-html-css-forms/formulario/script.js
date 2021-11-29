@@ -1,5 +1,3 @@
-import './node_modules/just-validate/dist/js/just-validate.js'
-
 // const buttonSubmit = document.querySelector('#button-submit');
 // const allInput = document.querySelectorAll('input');
 // const inputDate = document.querySelector('#input-date');
@@ -47,18 +45,6 @@ function addOptionOnScreen() {
 addOptionOnScreen()
 // buttonSubmit.addEventListener('click', (event) => { event.preventDefault() })
 
-
-
-new JustValidate('.js-form', {
-  rules: {
-    name: {
-      required: true,
-    }
-  },
-  submitHandler: function (form, values) {
-    console.log(form, values);
-  }
-})
 
 
 // function submitForm(event) {
