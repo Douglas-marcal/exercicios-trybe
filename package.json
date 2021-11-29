@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "just-validate": "^1.5.0"
+  },
+  "name": "exercicios-trybe",
+  "description": "Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Douglas Marçal](https://www.linkedin.com/in/douglas-marcal/)_ ao decorrer do curso na _[Trybe](https://www.betrybe.com/)_.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Douglas-marcal/exercicios-trybe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Douglas-marcal/exercicios-trybe/issues"
+  },
+  "homepage": "https://github.com/Douglas-marcal/exercicios-trybe#readme"
+}

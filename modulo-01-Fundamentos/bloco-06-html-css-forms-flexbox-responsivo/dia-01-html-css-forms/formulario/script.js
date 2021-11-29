@@ -1,3 +1,5 @@
+import '../../../../node_modules/just-validate/dist/js/just-validate.js'
+
 const buttonSubmit = document.querySelector('#button-submit');
 const allInput = document.querySelectorAll('input');
 const inputDate = document.querySelector('#input-date');
