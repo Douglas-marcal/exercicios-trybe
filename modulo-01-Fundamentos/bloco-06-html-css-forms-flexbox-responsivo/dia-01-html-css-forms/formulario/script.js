@@ -1,6 +1,7 @@
 // const buttonSubmit = document.querySelector('#button-submit');
 // const allInput = document.querySelectorAll('input');
 // const inputDate = document.querySelector('#input-date');
+
 const brazil = {
   'AC': 'Acre',
   'AL': 'Alagoas',
@@ -45,16 +46,16 @@ function addOptionOnScreen() {
 addOptionOnScreen()
 // buttonSubmit.addEventListener('click', (event) => { event.preventDefault() })
 
-
+new window.JustValidate('.teste-funciona');
 
 // function submitForm(event) {
-//   event.preventDefault()
-//   console.log(allInput)
-//   for (let index = 0; index < allInput.length; index += 1) {
-//     if (allInput[index].value.trim() === '') {
-//       alert('Preencha os campos obrigatórios!');
-//       allInput[index].value = ''
-//       break;
+  //   event.preventDefault()
+  //   console.log(allInput)
+  //   for (let index = 0; index < allInput.length; index += 1) {
+    //     if (allInput[index].value.trim() === '') {
+      //       alert('Preencha os campos obrigatórios!');
+      //       allInput[index].value = ''
+      //       break;
 //     }
 //   }
 // }
