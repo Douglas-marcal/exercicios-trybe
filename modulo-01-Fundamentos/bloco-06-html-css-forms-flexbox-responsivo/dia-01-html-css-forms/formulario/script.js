@@ -44,6 +44,26 @@ new window.JustValidate('.teste-funciona', {
   rules: {
     'full-name': {
       required: true,
+      minLength: 3,
+      maxLength: 40,
+    },
+    email: {
+      required: true,
+
     }
+  },
+  messages: {
+    'full-name': {
+      required: 'Campo obrigatório.',
+      minLength: 'Mínimo 3 caracteres.',
+      maxLength: 'Máximo 40 caracteres'
+    },
+    email: {
+      required: 'Campo obrigatório',
+      
+    },
+  },
+  submitHandler: (form, values) => {
+    console.log(form, values)
   }
 });
