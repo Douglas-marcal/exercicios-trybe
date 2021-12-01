@@ -2,14 +2,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 .header-container {
   height: 15vh;
+  background-color: azure;
 }
 
 .title {
-  font-size: x-large;
+  font-size: 1.3rem;
   text-align: center;
   font-weight: 700;
   padding: 10px;
@@ -25,4 +27,40 @@
   background-color: rgba(191, 178, 202, 0.233);
   padding: 0.5rem;
   border-radius: 0.4rem;
+}
+
+.aside-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-one ul , .aside-two ul {
+  list-style-type: none;
+}
+
+.aside-one {
+  background-color: cornsilk;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  line-height: 2.5rem;
+  order: 2;
+}
+
+.aside-two {
+  background-color: cadetblue;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  line-height: 2.5rem;
+  align-items: center;
+  order: 1;
+}
+
+.aside-two li {
+  font-size: 1.2rem;
+  font-weight: 500;
 }
