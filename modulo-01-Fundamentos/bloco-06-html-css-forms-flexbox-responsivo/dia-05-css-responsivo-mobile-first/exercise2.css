@@ -86,4 +86,26 @@
   max-width: 90%;
   margin: .8rem auto;
   text-indent: 1.2rem;
+  text-align: justify;
+}
+
+.footer-container {
+  min-height: 100vh;
+  background-color: rgba(126, 252, 0, 0.411);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  line-height: 2rem;
+}
+
+.footer-container h3 {
+  font-size: x-large;
+}
+
+.footer-container p {
+  max-width: 80%;
+  margin: .8rem auto;
+  text-indent: 1.2rem;
+  text-align: justify;
 }
