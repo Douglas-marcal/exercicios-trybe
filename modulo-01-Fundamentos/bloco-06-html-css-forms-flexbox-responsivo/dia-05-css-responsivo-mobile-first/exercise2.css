@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-container {
+  height: 15vh;
+}
+
+.title {
+  font-size: x-large;
+  text-align: center;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.nav-bar li {
+  background-color: rgba(191, 178, 202, 0.233);
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+}
