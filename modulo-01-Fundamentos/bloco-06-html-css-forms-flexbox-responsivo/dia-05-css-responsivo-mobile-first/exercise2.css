@@ -51,7 +51,7 @@
 
 .aside-two {
   background-color: cadetblue;
-  min-height: 85vh;
+  min-height: calc(100vh - 15vh);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
