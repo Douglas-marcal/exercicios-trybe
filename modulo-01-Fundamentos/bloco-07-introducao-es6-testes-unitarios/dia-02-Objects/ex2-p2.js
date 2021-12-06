@@ -52,6 +52,11 @@ const allStudents = () => {
   }
   console.log(counter);
   return counter;
-}
+};
 
-allStudents();
+// allStudents();
+
+const getValueByNumber = (object, number) => console.log(Object.values(object)[number]);
+
+
+getValueByNumber(lesson3, 2);
