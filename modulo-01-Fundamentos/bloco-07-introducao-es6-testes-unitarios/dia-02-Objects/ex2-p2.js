@@ -38,4 +38,20 @@ const showValuesObject = (object) => {
   console.log(Object.values(object))
 }
 
-showValuesObject(lesson1);
+// showValuesObject(lesson1);
+const allLessons = {}
+Object.assign(allLessons, {lesson1}, {lesson2}, {lesson3});
+
+// console.log(allLessons);
+
+const allStudents = () => {
+  const lessons = Object.values(allLessons);
+  let counter = 0;
+  for (let index = 0; index < lessons.length; index += 1) {
+    counter += lessons[index].numeroEstudantes;
+  }
+  console.log(counter);
+  return counter;
+}
+
+allStudents();
