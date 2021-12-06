@@ -59,4 +59,18 @@ const allStudents = () => {
 const getValueByNumber = (object, number) => console.log(Object.values(object)[number]);
 
 
-getValueByNumber(lesson3, 2);
+// getValueByNumber(lesson3, 2);
+
+const verifyObject = (object, key, value) => {
+  const keys = Object.keys(object)
+  const values = Object.values(object)
+  // console.log(object[key], values)
+  if (object[key] === value) {
+    return true;
+  }
+  return false;
+  // console.log(keys)
+  // return key && object[key];
+}
+
+console.log(verifyObject(lesson3, 'turno', 'noite'))
