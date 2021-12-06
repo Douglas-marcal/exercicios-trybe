@@ -25,3 +25,11 @@ const nightShift = (object, key, value) => {
 nightShift(lesson2, 'turno', 'noite');
 
 // console.log(lesson2);
+
+const showKeysObjects = (object) => console.log(Object.keys(object))
+
+// showKeysObjects(lesson1);
+
+const objectLength = (object) => console.log(Object.keys(object).length)
+
+// objectLength(lesson2);
