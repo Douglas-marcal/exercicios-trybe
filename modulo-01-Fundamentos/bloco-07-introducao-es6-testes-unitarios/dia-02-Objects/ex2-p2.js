@@ -62,15 +62,26 @@ const getValueByNumber = (object, number) => console.log(Object.values(object)[n
 // getValueByNumber(lesson3, 2);
 
 const verifyObject = (object, key, value) => {
-  const keys = Object.keys(object)
-  const values = Object.values(object)
-  // console.log(object[key], values)
+  const keys = Object.keys(object);
+  const values = Object.values(object);
   if (object[key] === value) {
     return true;
   }
   return false;
-  // console.log(keys)
-  // return key && object[key];
-}
+};
 
-console.log(verifyObject(lesson3, 'turno', 'noite'))
+// console.log(verifyObject(lesson3, 'turno', 'noite'));
+
+// Bônus
+
+// console.log(allLessons);
+
+const teacherCheck = (object, teacher) => {
+  const teacherSelected = Object.entries(object);
+  console.log(Object.entries(teacherSelected[0][1]))
+  for (let index = 0; index < teacherSelected.length; index += 1) {
+  }
+  // return teacherSelected
+};
+
+console.log(teacherCheck(allLessons, 'Maria Clara'));
