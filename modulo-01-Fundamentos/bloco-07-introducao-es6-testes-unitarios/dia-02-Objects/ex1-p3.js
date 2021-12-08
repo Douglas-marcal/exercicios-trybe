@@ -22,11 +22,16 @@ const showError = (error) => {
 } 
 
 const sum = () => {
-    const result = value1.value + value2.value;
+    const result = Number(value1.value) + Number(value2.value);
     displayResult.style = ''
     displayResult.innerHTML = `Resultado: ${result}`;
     document.getElementById('value1').value = '';
     document.getElementById('value2').value = '';
+};
+
+const clearFields = () => {
+  value1.value = '';
+  value2.value = '';
 };
 
 const verifyExceptions = () => {
@@ -37,8 +42,7 @@ const verifyExceptions = () => {
   } catch (error) {
     showError(error.message)
   } finally {
-    value1.value = '';
-    value2.value = '';
+    clearFields();
   }
 };
 
