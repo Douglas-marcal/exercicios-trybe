@@ -5,16 +5,12 @@ const button = document.getElementById('button');
 
 const verifyingEmpty = () => {
   if (value1.value.trim() === '' || value2.value.trim() === '') {
-    value1.value = '';
-    value2.value = '';
     throw new Error('Os campos não podem estar vazios!')
   }
 }
 
 const verifyIsNumber = () => {
   if (isNaN(Number(value1.value)) || isNaN(Number(value2.value))) {
-    value1.value = '';
-    value2.value = '';
     throw new Error('Os valores digitados devem ser numéricos');
   }
 }
@@ -40,6 +36,9 @@ const verifyExceptions = () => {
     sum();
   } catch (error) {
     showError(error.message)
+  } finally {
+    value1.value = '';
+    value2.value = '';
   }
 };
 
