@@ -10,7 +10,7 @@ const verifyingEmpty = () => {
 }
 
 const verifyIsNumber = () => {
-  if (isNaN(Number(value1.value)) || isNaN(Number(value2.value))) {
+  if (isNaN(+value1.value) || isNaN(+value2.value)) {
     throw new Error('Os valores digitados devem ser numéricos');
   }
 }
@@ -22,7 +22,7 @@ const showError = (error) => {
 } 
 
 const sum = () => {
-    const result = Number(value1.value) + Number(value2.value);
+    const result = +value1.value + +value2.value;
     displayResult.style = ''
     displayResult.innerHTML = `Resultado: ${result}`;
     document.getElementById('value1').value = '';
