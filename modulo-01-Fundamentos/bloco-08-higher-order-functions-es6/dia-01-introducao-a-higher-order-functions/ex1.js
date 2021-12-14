@@ -12,4 +12,4 @@ const newEmployees = (fullName) => {
   return employees;
 };
 
-console.log(newEmployees(newPerson));
+console.log(5.2 % 1);
