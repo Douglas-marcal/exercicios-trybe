@@ -1,5 +1,5 @@
 const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
-const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'D', 'D', 'B'];
 
 const checkCorrectAnswers = (arrayCorrect, studentAnswer) => {
   let counter = 0;
@@ -8,8 +8,10 @@ const checkCorrectAnswers = (arrayCorrect, studentAnswer) => {
 
     if (element === arrayCorrect[index]) {
       counter += 1;
-    } else {
+      return;
+    } if (element !== arrayCorrect[index]) {
       counter -= 0.5;
+      return;
     };
   });
   return counter;
