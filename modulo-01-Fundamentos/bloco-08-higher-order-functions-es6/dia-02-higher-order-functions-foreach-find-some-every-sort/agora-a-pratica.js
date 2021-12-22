@@ -103,6 +103,12 @@ const booksOrderedByReleaseYearDesc = () => {
 
 // 5 - Faça uma função que retorne true , se todas as pessoas autoras nasceram no século XX, ou false , caso contrário.
 
-const everyoneWasBornOnSecXX = () => books.every(({ author: { birthYear } }) => birthYear > 1901 && birthYear < 2001)
+const everyoneWasBornOnSecXX = () => books.every(({ author: { birthYear } }) => birthYear > 1900 && birthYear < 2001);
 
 // console.log(everyoneWasBornOnSecXX());
+
+// 6 - Faça uma função que retorne true , se algum livro foi lançado na década de 80, e false , caso contrário.
+
+const someBookWasReleaseOnThe80s = () => books.some(({ releaseYear }) => releaseYear > 1979 || releaseYear < 1981);
+
+// console.log(someBookWasReleaseOnThe80s());
