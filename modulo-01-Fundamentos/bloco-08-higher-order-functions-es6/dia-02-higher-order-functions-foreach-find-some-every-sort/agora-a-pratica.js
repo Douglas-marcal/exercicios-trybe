@@ -67,7 +67,7 @@ const books = [
 
 const firstPeopleBorn1947 = books.find(({ author: { birthYear } }) => birthYear === 1947);
 
-console.log(firstPeopleBorn1947);
+// console.log(firstPeopleBorn1947);
 
 // 2 - Retorne o nome do livro de menor nome.
 // Dica: use a função forEach .
@@ -84,4 +84,10 @@ const smallerName = () => {
   return nameBook;
 };
 
-console.log(smallerName());
+// console.log(smallerName());
+
+// 3 - Encontre o primeiro livro cujo nome possui 26 caracteres.
+
+const getNamedBook = () => books.find(({ name }) => name.length === 26);
+
+// console.log(getNamedBook());
