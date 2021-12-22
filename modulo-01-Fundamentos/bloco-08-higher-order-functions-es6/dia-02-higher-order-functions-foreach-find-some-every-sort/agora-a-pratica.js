@@ -91,3 +91,12 @@ const smallerName = () => {
 const getNamedBook = () => books.find(({ name }) => name.length === 26);
 
 // console.log(getNamedBook());
+
+// 4 - Ordene os livros por data de lançamento em ordem decrescente.
+
+const booksOrderedByReleaseYearDesc = () => {
+  const copyBooks = [...books];
+  return copyBooks.sort((a, b) => b.releaseYear - a.releaseYear);
+};
+
+// console.log(booksOrderedByReleaseYearDesc());
