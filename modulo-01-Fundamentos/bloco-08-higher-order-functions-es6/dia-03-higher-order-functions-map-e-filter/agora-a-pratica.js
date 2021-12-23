@@ -68,4 +68,16 @@ const books = [
 
 const formatedBookNames = () => books.map(({ name, genre, author }) => `${name} - ${genre} - ${author.name}`);
 
-console.log(formatedBookNames())
+// console.log(formatedBookNames());
+
+// 2 - Construa um array de objetos a partir do array de livros. Cada objeto deve conter uma propriedade author , com o nome da pessoa autora do livro, e uma propriedade age com a idade dessa pessoa quando o livro foi lançado. O array deve ser ordenado por idade, ou seja, da pessoa mais jovem para a mais velha considerando suas idades quando o livro foi lançado.
+// Dica: use as funções map , sort
+
+const nameAndAge = () => books.map(({ releaseYear, author: { name, birthYear}}) => (
+  {
+    age: releaseYear - birthYear,
+    name,
+  }
+)).sort((a, b) => a.age - b.age);
+
+console.log(nameAndAge());
