@@ -107,3 +107,25 @@ const fantasyOrScienceFictionAuthors = () => books.filter(({ genre }) => genre =
 const oldBooks = () => books.filter(({ releaseYear }) => 2022 - releaseYear > 60).map(({ name }) => name);
 
 // console.log(oldBooks());
+
+// 7 - Encontre o nome do livro escrito pela pessoa cujo nome registrado começa com três iniciais.
+// Dica: cada inicial termina com um ponto.
+
+const authorWith3DotsOnName = () => {
+  const dotsOnName = books.filter(({ author: { name } }) => name.includes('.')).map(({ author: { name } } ) => name)
+  let book;
+  dotsOnName.forEach((names) => {
+    let counter = 0
+    names.split(' ').forEach((name) => {
+      if (name.includes('.')) {
+        counter += 1;
+      }
+      if (counter === 3) {
+        book = names
+      }
+    });
+  });
+  return books.find(({ author: { name } }) => name === book).name;
+};
+
+console.log(authorWith3DotsOnName());
