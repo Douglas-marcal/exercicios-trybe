@@ -102,4 +102,23 @@ const averageAge = () =>
 
 const longestNamedBook = () => books.reduce((higher, book) => (higher.name.length > book.name.length) ? higher : book);
 
-console.log(longestNamedBook());
+// console.log(longestNamedBook());
+
+// 5 - Dada o array de nomes, retorne a quantidade de vezes em que aparecem a letra a maiúscula ou minúscula.
+
+const names = [
+  'Aanemarie', 'Adervandes', 'Akifusa',
+  'Abegildo', 'Adicellia', 'Aladonata',
+  'Abeladerco', 'Adieidy', 'Alarucha',
+];
+
+const containsA = () => 
+  names.reduce((counter, name) => 
+    counter + name.split('').reduce((wordsCounter, letter) =>
+      (letter.toLowerCase() === 'a')
+        ? wordsCounter + 1
+        : wordsCounter, 0
+    ), 0
+);
+
+console.log(containsA());
