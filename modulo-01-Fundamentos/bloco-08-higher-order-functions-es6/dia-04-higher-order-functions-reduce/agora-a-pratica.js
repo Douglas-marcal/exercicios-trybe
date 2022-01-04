@@ -131,5 +131,14 @@ const studentAverage = () => students.map((student, index) => (
     averageAge: grades[index].reduce((sum, current) => sum + current, 0) / grades[index].length, 
   }
 ));
+// -------------------------------------------------------------------------------------------------//
+const studentAverage = () => students.reduce((accumulator, currentValue, index) => {
+  const result = {
+    name: currentValue,
+    average: grades[index].reduce((acc, current) => acc + current) / grades[index].length
+  }
+  accumulator.push(result)
+  return accumulator
+}, []);
 
 console.log(studentAverage());
