@@ -61,16 +61,13 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
-
-// 1 - Encontre o nome da primeira pessoa autora do livro nascida no ano de 1947.
+// 1
 
 const firstPeopleBorn1947 = books.find(({ author: { birthYear } }) => birthYear === 1947);
 
 // console.log(firstPeopleBorn1947);
 
-// 2 - Retorne o nome do livro de menor nome.
-// Dica: use a função forEach .
+// 2
 
 const smallerName = () => {
   let nameBook;
@@ -86,13 +83,13 @@ const smallerName = () => {
 
 // console.log(smallerName());
 
-// 3 - Encontre o primeiro livro cujo nome possui 26 caracteres.
+// 3
 
 const getNamedBook = () => books.find(({ name }) => name.length === 26);
 
 // console.log(getNamedBook());
 
-// 4 - Ordene os livros por data de lançamento em ordem decrescente.
+// 4
 
 const booksOrderedByReleaseYearDesc = () => {
   const copyBooks = [...books];
@@ -101,19 +98,19 @@ const booksOrderedByReleaseYearDesc = () => {
 
 // console.log(booksOrderedByReleaseYearDesc());
 
-// 5 - Faça uma função que retorne true , se todas as pessoas autoras nasceram no século XX, ou false , caso contrário.
+// 5
 
 const everyoneWasBornOnSecXX = () => books.every(({ author: { birthYear } }) => birthYear > 1900 && birthYear < 2001);
 
 // console.log(everyoneWasBornOnSecXX());
 
-// 6 - Faça uma função que retorne true , se algum livro foi lançado na década de 80, e false , caso contrário.
+// 6
 
 const someBookWasReleaseOnThe80s = () => books.some(({ releaseYear }) => releaseYear > 1979 || releaseYear < 1981);
 
 // console.log(someBookWasReleaseOnThe80s());
 
-// 7 - Faça uma função que retorne true , caso nenhum author tenha nascido no mesmo ano, e false , caso contrário.
+// 7
 
 const authorUnique = () => {
   return books.every((every) => !books.some(({ author }) => every.author.birthYear === author.birthYear && every.author.name !== author.name))
