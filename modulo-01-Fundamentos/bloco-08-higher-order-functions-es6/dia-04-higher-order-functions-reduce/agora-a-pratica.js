@@ -1,4 +1,4 @@
-// 1 - Dada uma matriz, transforme em um array.
+// 1
 
 const arrays = [
   ['1', '2', '3'],
@@ -73,9 +73,7 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
-
-// 2 - Crie uma string com os nomes de todas as pessoas autoras.
+// 2
 
 const reduceNames = () => books.reduce((acc, { author: { name } }, index, array) => 
   (index === array.length - 1)
@@ -86,7 +84,7 @@ const reduceNames = () => books.reduce((acc, { author: { name } }, index, array)
 
 // console.log(reduceNames());
 
-// 3 - Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
+// 3
 
 // const expectedResult = 43;
 
@@ -98,14 +96,13 @@ const averageAge = () =>
 
 // console.log(averageAge());
 
-// 4 - Encontre o livro com o maior nome.
+// 4
 
 const longestNamedBook = () => books.reduce((higher, book) => (higher.name.length > book.name.length) ? higher : book);
 
 // console.log(longestNamedBook());
 
-// 5 - Dada o array de nomes, retorne a quantidade de vezes em que aparecem a letra a maiúscula ou minúscula.
-
+// 5
 const names = [
   'Aanemarie', 'Adervandes', 'Akifusa',
   'Abegildo', 'Adicellia', 'Aladonata',
@@ -121,4 +118,18 @@ const containsA = () =>
     ), 0
 );
 
-console.log(containsA());
+// console.log(containsA());
+
+// 6.
+
+const students = ['Pedro Henrique', 'Miguel', 'Maria Clara'];
+const grades = [[9, 8, 10, 7, 5], [10, 9, 9, 10, 8], [10, 7, 10, 8, 9]];
+
+const studentAverage = () => students.map((student, index) => (
+  {
+    student,
+    averageAge: grades[index].reduce((sum, current) => sum + current, 0) / grades[index].length, 
+  }
+));
+
+console.log(studentAverage());
