@@ -144,5 +144,5 @@ const { spring, summer, autumn, winter } = yearSeasons;
 
 const months = [...winter, ...spring, ...summer, ...autumn];
 const december = months.shift();
-months.push(december);
-console.log(months);
+// months.push(december);
+// console.log(months);
