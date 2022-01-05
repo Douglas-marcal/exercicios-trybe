@@ -74,3 +74,16 @@ const filterPeople = (array) => array.filter(({ bornIn, nationality }) => (
 ));
 
 // console.log(filterPeople(people));
+
+// 5
+
+const myList = [1, 2, 3];
+
+// const swap = (array) => {
+//   [array[0], array[2]] = [array[2], array[0]] 
+//   return array
+// }
+
+const swap = ([zero, one, two]) => [two, one, zero]
+
+console.log(swap(myList));
