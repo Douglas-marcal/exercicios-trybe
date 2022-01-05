@@ -130,3 +130,19 @@ const shipLength = (listShips) => listShips.map(({ name, length, measurementUnit
 const greet = (name, message = 'Hi') => `${message}, ${name}`;
 
 // console.log(greet('Douglas', 'Good morning'));
+
+// 9
+
+const yearSeasons = {
+  spring: ['March', 'April', 'May'],
+  summer: ['June', 'July', 'August'],
+  autumn: ['September', 'October', 'November'],
+  winter: ['December', 'January', 'February'],
+};
+
+const { spring, summer, autumn, winter } = yearSeasons;
+
+const months = [...winter, ...spring, ...summer, ...autumn];
+const december = months.shift();
+months.push(december);
+console.log(months);
