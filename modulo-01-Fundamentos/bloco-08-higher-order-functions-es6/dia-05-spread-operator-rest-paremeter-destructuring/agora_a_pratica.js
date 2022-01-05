@@ -123,4 +123,10 @@ const shipLength = (listShips) => listShips.map(({ name, length, measurementUnit
   )
 ).join('. \n');
 
-console.log(shipLength(ships))
+// console.log(shipLength(ships));
+
+// 8
+
+const greet = (name, message = 'Hi') => `${message}, ${name}`;
+
+// console.log(greet('Douglas', 'Good morning'));
