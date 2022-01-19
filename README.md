@@ -10,7 +10,7 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 
 ##### Bloco 1: Introdução - Unix & Bash
 
-- [X] 1-3: _Fundamentos do Desenvolvimento Web_
+-[X] 1-3: _Fundamentos do Desenvolvimento Web_
 - [X] 1-3: _Introdução - Unix & Shell_
 - [X] 1-3: _Unix & Bash - Parte 1_
 - [X] 1-4: _Unix & Bash - Parte 2_
