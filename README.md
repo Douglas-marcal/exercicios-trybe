@@ -10,7 +10,7 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 
 ##### Bloco 1: Introdução - Unix & Bash
 
--[X] 1-3: _Fundamentos do Desenvolvimento Web_
+- [X] 1-3: _Fundamentos do Desenvolvimento Web_
 - [X] 1-3: _Introdução - Unix & Shell_
 - [X] 1-3: _Unix & Bash - Parte 1_
 - [X] 1-4: _Unix & Bash - Parte 2_
@@ -81,9 +81,9 @@ O programa conta com mais de 1.500 horas de aulas online, aborda introdução ao
 ##### Bloco 9: JavaScript e Testes Assíncronos
 
 - [X] 9-1: _JavaScript Assíncrono e Callbacks_
-- [X] 9-2: _JavaScript Assí­ncrono - Fetch API e async/await_
-- [ ] 9-3: _Jest - Testes Assíncronos_
-- [ ] 9-4: _[Projeto - Carrinho de Compras]()_
+- [X] 9-2: _JavaScript Assíncrono - Fetch API e async/await_
+- [X] 9-3: _Jest - Testes Assíncronos_
+- [X] 9-4: _[Projeto - Carrinho de Compras](https://douglas-marcal.github.io/projetos/shopping-cart/)_
 
 
 # [...]
