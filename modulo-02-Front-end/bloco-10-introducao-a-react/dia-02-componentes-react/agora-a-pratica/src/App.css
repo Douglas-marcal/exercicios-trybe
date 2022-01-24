@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.pokemon-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-pokemon {
+  background-color: rgba(201, 171, 230, 0.699);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+h4 {
+  padding: 5px 0;
+}
+
+h1 , .card-pokemon {
+  text-align: center;
+}
