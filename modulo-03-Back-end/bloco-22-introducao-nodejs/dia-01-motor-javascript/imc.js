@@ -23,10 +23,15 @@ function calcIMC() {
 
   const IMC = weight / (HEIGHT_IN_METERS ** 2);
 
-  const messageIMC = categoryIMC(IMC);
-
-  return `Seu IMC é ${IMC.toFixed(1)}, classificado como: ${messageIMC}`;
-  
+  return IMC.toFixed(1);
 }
 
-console.log(calcIMC());
+function printResultCalcIMC() {
+  const valueIMC = calcIMC();
+  const messageIMC = categoryIMC(valueIMC);
+
+  const message = `Seu IMC é ${valueIMC}, classificado como: ${messageIMC}`;
+  console.log(message)
+}
+
+printResultCalcIMC();
