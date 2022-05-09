@@ -12,7 +12,7 @@ function categoryIMC(IMC) {
   } else if (IMC < 40) {
     return 'Obesidade grau II';
   } else {
-    return 'Obesidade graus III e IV'
+    return 'Obesidade graus III e IV';
   }
 }
 
@@ -31,7 +31,9 @@ function printResultCalcIMC() {
   const messageIMC = categoryIMC(valueIMC);
 
   const message = `Seu IMC é ${valueIMC}, classificado como: ${messageIMC}`;
-  console.log(message)
+  console.log(message);
 }
 
 printResultCalcIMC();
+
+module.exports = printResultCalcIMC;
