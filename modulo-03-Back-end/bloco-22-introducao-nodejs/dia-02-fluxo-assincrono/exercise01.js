@@ -13,4 +13,4 @@ function returnPromise(number1, number2, number3) {
   })
 }
 
-module.exports = returnPromise;
+module.exports = { returnPromise };
