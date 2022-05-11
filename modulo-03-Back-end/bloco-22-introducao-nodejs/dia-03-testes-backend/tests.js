@@ -1,7 +1,7 @@
 const { expect } = require('chai');
 const { exerciseOne } = require('./exercise01');
 
-describe('Exercise 1', () => {
+describe('Exercises 1, 2, 3', () => {
   it('returns "positivo"', () => {
     const result = exerciseOne(4);
 
@@ -18,5 +18,11 @@ describe('Exercise 1', () => {
     const result = exerciseOne(0);
 
     expect(result).to.be.equals('neutro');
+  });
+
+  it('returns "o valor deve ser um número"', () => {
+    const result = exerciseOne('0');
+
+    expect(result).to.be.equals('o valor deve ser um número');
   });
 });
