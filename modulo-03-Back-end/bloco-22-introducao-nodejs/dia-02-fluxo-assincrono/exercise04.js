@@ -26,8 +26,42 @@ function getCharacterFromId(id) {
   })
 }
 
-getCharacterFromId(10)
-  .then((result) => console.log(result))
-  .catch((error) => console.error(error));
+async function removeCharacter10And6() {
+  const fileContent = await fs.readFile(fileName, 'utf-8');
+  const fileParsed = JSON.parse(fileContent);
+  const idToRemove = [6, 10];
+  const newContent = fileParsed.filter(({ id }) => !(idToRemove.includes(Number(id))));
+  const fileStringify = JSON.stringify(newContent);
+  await fs.writeFile(fileName, fileStringify);
+}
 
-readAndPrintFile();
+async function createFileSimpsonFamily() {
+  const fileContent = await fs.readFile(fileName, 'utf-8');
+  const fileParsed = JSON.parse(fileContent);
+  const newContent = fileParsed.slice(0, 4);
+  const fileStringify = JSON.stringify(newContent);
+  const fileSimpsonFamily = 'simpsonFamily.json';
+  await fs.writeFile(fileSimpsonFamily, fileStringify);
+}
+
+async function addNewCharacter() {
+  const newCharacter = { id: '5', name: 'Nelson Muntz'}
+  const fileSimpsonFamily = 'simpsonFamily.json';
+  const fileContent = await fs.readFile(fileSimpsonFamily, 'utf-8');
+  const fileParsed = JSON.parse(fileContent);
+  const newContent = [...fileParsed, newCharacter];
+  const fileStringify = JSON.stringify(newContent);
+  await fs.writeFile(fileSimpsonFamily, fileStringify);
+}
+
+// getCharacterFromId(10)
+//   .then((result) => console.log(result))
+//   .catch((error) => console.error(error));
+
+// readAndPrintFile();
+
+// removeCharacter10And6();
+
+// createFileSimpsonFamily();
+
+// addNewCharacter();
