@@ -5,6 +5,7 @@ const app = express();
 const PORT = 3333;
 const OK = 200;
 const NOT_FOUND = 404;
+const UNAUTHORIZED = 401;
 
 app.use(bodyParser.json());
 
@@ -20,6 +21,16 @@ app.post('/hello', (request, response) => {
   const message = { message: `Hello, ${name}` };
 
   response.status(OK).json(message);
+});
+
+app.post('/greetings', (request, response) => {
+  const { name, age } = request.body;
+  const messageUnauthorized = { message: 'Unauthorized' };
+  const messageAuthorized = { message: `Hello, ${name}!` };
+
+  if (age < 18) return response.status(UNAUTHORIZED).json(messageUnauthorized);
+
+  response.status(OK).json(messageAuthorized)
 });
 
 app.all('*', (request, response) => {
