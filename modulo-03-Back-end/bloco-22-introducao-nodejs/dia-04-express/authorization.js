@@ -1,13 +1,12 @@
-const UNAUTHORIZED = 401;
-const INTERNAL_SERVER_ERROR = 500;
-const message = { message: 'Token inválido' };
+const MESSAGE_INVALID_TOKEN = require('./constants');
+const { UNAUTHORIZED, INTERNAL_SERVER_ERROR } = require('./constants/statusCode');
 
 function authorization(request, response, next) {
   try {
     const { authorization } = request.headers;
   
     if (!authorization || authorization.length !== 16) {
-      return response.status(UNAUTHORIZED).json(message);
+      return response.status(UNAUTHORIZED).json(MESSAGE_INVALID_TOKEN);
     }
   
     return next();

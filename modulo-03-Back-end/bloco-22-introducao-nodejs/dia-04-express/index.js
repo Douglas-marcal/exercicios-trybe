@@ -1,19 +1,22 @@
 const express = require('express');
 const { getFileContent, addFileContent } = require('./utils');
 const { authorization } = require('./authorization');
+const {
+  OK,
+  CREATED,
+  NOT_FOUND,
+  NO_CONTENT,
+  UNAUTHORIZED,
+  CONFLICT,
+  INTERNAL_SERVER_ERROR,
+} = require('./constants/statusCode');
+const {
+  MESSAGE_CONFLICT,
+  MESSAGE_NOT_FOUND,
+  PORT,
+  SIMPSONS_FILE,
+} = require('./constants');
 const app = express();
-
-const PORT = 3333;
-const OK = 200;
-const CREATED = 201;
-const NO_CONTENT = 204;
-const UNAUTHORIZED = 401;
-const NOT_FOUND = 404;
-const CONFLICT = 409;
-const INTERNAL_SERVER_ERROR = 500;
-const SIMPSONS_FILE = 'simpsons.json';
-const MESSAGE_NOT_FOUND = { message: 'simpson not found' };
-const MESSAGE_CONFLICT = { message: 'id already exists' };
 
 app.use(express.json());
 app.use(authorization);
