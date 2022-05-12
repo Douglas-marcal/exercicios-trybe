@@ -9,7 +9,8 @@ const CREATED = 201;
 const UNAUTHORIZED = 401;
 const NOT_FOUND = 404;
 const INTERNAL_SERVER_ERROR = 500;
-const SIMPSONS_FILE = 'simpsons.json'
+const SIMPSONS_FILE = 'simpsons.json';
+const MESSAGE_NOT_FOUND = { message: 'simpson not found' };
 
 app.use(bodyParser.json());
 
@@ -24,6 +25,21 @@ app.get('/simpsons', async (_, response) => {
     const fileContent = await getFileContent(SIMPSONS_FILE);
 
     return response.status(OK).json(fileContent);
+  } catch (error) {
+    return response.status(INTERNAL_SERVER_ERROR).end();
+  }
+});
+
+app.get('/simpsons/:id', async (request, response) => {
+  try {
+    const { id } = request.params;
+    const fileContent = await getFileContent(SIMPSONS_FILE);
+
+    const characterFound = fileContent.find((character) => Number(character.id) === Number(id));
+
+    if (!characterFound) return response.status(NOT_FOUND).json(MESSAGE_NOT_FOUND);
+
+    return response.status(OK).json(characterFound);
   } catch (error) {
     return response.status(INTERNAL_SERVER_ERROR).end();
   }
