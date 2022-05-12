@@ -7,4 +7,9 @@ async function getFileContent(fileName) {
   return fileContent;
 }
 
-module.exports = { getFileContent };
+async function addFileContent(fileName, fileContent) {
+  const content = JSON.stringify(fileContent)
+  await fs.writeFile(fileName, content);
+}
+
+module.exports = { getFileContent, addFileContent };

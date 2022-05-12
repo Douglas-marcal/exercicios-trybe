@@ -1,16 +1,19 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const { getFileContent } = require('./utils');
+const { getFileContent, addFileContent } = require('./utils');
 const app = express();
 
 const PORT = 3333;
 const OK = 200;
 const CREATED = 201;
+const NO_CONTENT = 204;
 const UNAUTHORIZED = 401;
 const NOT_FOUND = 404;
+const CONFLICT = 409;
 const INTERNAL_SERVER_ERROR = 500;
 const SIMPSONS_FILE = 'simpsons.json';
 const MESSAGE_NOT_FOUND = { message: 'simpson not found' };
+const MESSAGE_CONFLICT = { message: 'id already exists' };
 
 app.use(bodyParser.json());
 
@@ -61,6 +64,30 @@ app.post('/greetings', (request, response) => {
   if (age < 18) return response.status(UNAUTHORIZED).json(messageUnauthorized);
 
   response.status(OK).json(messageAuthorized)
+});
+
+app.post('/simpsons', async (request, response) => {
+  try {
+    const { id, name } = request.body;
+    const characterToAdd = {
+      id,
+      name,
+    };
+
+    const fileContent = await getFileContent(SIMPSONS_FILE);
+
+    const isAlreadyExists = fileContent.find((character) => Number(character.id) === Number(id));
+
+    if (isAlreadyExists) return response.status(CONFLICT).json(MESSAGE_CONFLICT);
+
+    const newContent = [...fileContent, characterToAdd];
+
+    await addFileContent(SIMPSONS_FILE, newContent);
+
+    return response.status(NO_CONTENT).end();
+  } catch (error) {
+    return response.status(INTERNAL_SERVER_ERROR).end();
+  }
 });
 
 app.put('/users/:name/:age', (request, response) => {
