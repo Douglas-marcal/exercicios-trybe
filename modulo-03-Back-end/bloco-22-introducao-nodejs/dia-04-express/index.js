@@ -4,8 +4,9 @@ const app = express();
 
 const PORT = 3333;
 const OK = 200;
-const NOT_FOUND = 404;
+const CREATED = 201;
 const UNAUTHORIZED = 401;
+const NOT_FOUND = 404;
 
 app.use(bodyParser.json());
 
@@ -31,6 +32,14 @@ app.post('/greetings', (request, response) => {
   if (age < 18) return response.status(UNAUTHORIZED).json(messageUnauthorized);
 
   response.status(OK).json(messageAuthorized)
+});
+
+app.put('/users/:name/:age', (request, response) => {
+  const { name, age } = request.params;
+
+  const message = { message: `Seu nome é ${name} e você tem ${age} anos de idade` };
+
+  response.status(CREATED).json(message);
 });
 
 app.all('*', (request, response) => {
