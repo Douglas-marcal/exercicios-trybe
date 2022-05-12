@@ -15,7 +15,9 @@ const {
   MESSAGE_NOT_FOUND,
   PORT,
   SIMPSONS_FILE,
+  MESSAGE_MISSING_FIELDS,
 } = require('./constants');
+const { tokenGenerator } = require('./tokenGenerator');
 const app = express();
 
 app.use(express.json());
@@ -92,6 +94,18 @@ app.post('/simpsons', async (request, response) => {
   } catch (error) {
     return response.status(INTERNAL_SERVER_ERROR).end();
   }
+});
+
+app.post('/signup', (request, response) => {
+  const { email, password, firstName, phone } = request.body;
+
+  if (!email || !password || !firstName || !phone) {
+    return response.status(UNAUTHORIZED).json(MESSAGE_MISSING_FIELDS);
+  }
+
+  const token = tokenGenerator();
+
+  response.status(OK).json({token});
 });
 
 app.put('/users/:name/:age', (request, response) => {
