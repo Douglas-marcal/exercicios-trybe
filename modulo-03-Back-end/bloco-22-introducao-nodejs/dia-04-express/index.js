@@ -1,6 +1,6 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const { getFileContent, addFileContent } = require('./utils');
+const { authorization } = require('./authorization');
 const app = express();
 
 const PORT = 3333;
@@ -15,7 +15,8 @@ const SIMPSONS_FILE = 'simpsons.json';
 const MESSAGE_NOT_FOUND = { message: 'simpson not found' };
 const MESSAGE_CONFLICT = { message: 'id already exists' };
 
-app.use(bodyParser.json());
+app.use(express.json());
+app.use(authorization);
 
 app.get('/ping', (_, response) => {
   const message = { message: 'pong'};
