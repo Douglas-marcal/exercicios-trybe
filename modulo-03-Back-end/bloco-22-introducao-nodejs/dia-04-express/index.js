@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const { getFileContent } = require('./utils');
 const app = express();
 
 const PORT = 3333;
@@ -7,6 +8,8 @@ const OK = 200;
 const CREATED = 201;
 const UNAUTHORIZED = 401;
 const NOT_FOUND = 404;
+const INTERNAL_SERVER_ERROR = 500;
+const SIMPSONS_FILE = 'simpsons.json'
 
 app.use(bodyParser.json());
 
@@ -14,6 +17,16 @@ app.get('/ping', (_, response) => {
   const message = { message: 'pong'};
 
   response.status(OK).json(message);
+});
+
+app.get('/simpsons', async (_, response) => {
+  try {
+    const fileContent = await getFileContent(SIMPSONS_FILE);
+
+    return response.status(OK).json(fileContent);
+  } catch (error) {
+    return response.status(INTERNAL_SERVER_ERROR).end();
+  }
 });
 
 app.post('/hello', (request, response) => {
