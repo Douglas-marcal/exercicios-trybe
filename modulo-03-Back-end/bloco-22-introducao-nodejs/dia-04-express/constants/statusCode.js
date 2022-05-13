@@ -1,0 +1,17 @@
+const OK = 200;
+const CREATED = 201;
+const NO_CONTENT = 204;
+const UNAUTHORIZED = 401;
+const NOT_FOUND = 404;
+const CONFLICT = 409;
+const INTERNAL_SERVER_ERROR = 500;
+
+module.exports = {
+  OK,
+  CREATED,
+  NOT_FOUND,
+  NO_CONTENT,
+  UNAUTHORIZED,
+  CONFLICT,
+  INTERNAL_SERVER_ERROR,
+};
