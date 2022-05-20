@@ -19,8 +19,6 @@ async function isInvalidBook(title, authorId) {
 
   const authorDoesNotExist = !(await getByAuthorId(authorId));
 
-  console.log(authorDoesNotExist)
-  
   if (authorDoesNotExist) return true;
 
   return false;
