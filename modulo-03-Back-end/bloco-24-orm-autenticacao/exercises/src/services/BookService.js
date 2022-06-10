@@ -20,9 +20,18 @@ function updateBook(id, bookInfo) {
   });
 }
 
+function deleteBook(id) {
+  return Book.destroy({
+    where: {
+      id
+    },
+  });
+}
+
 module.exports = {
   getAll,
   getById,
   addBook,
   updateBook,
+  deleteBook,
 };
