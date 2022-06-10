@@ -33,8 +33,19 @@ async function addBook(request, response) {
   response.status(201).json(message);
 }
 
+async function updateBook(request, response) {
+  const { params: { id }, body } = request
+
+  const [book] = await bookService.updateBook(id, body);
+
+  if (!book) return response.status(404).json({ message: 'Book not found' });
+
+  response.status(200).json({ message: 'Book updated'});
+}
+
 module.exports = {
   getAll,
   getById,
   addBook,
+  updateBook,
 };
