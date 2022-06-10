@@ -24,12 +24,17 @@ module.exports = {
         last_name: 'Mathias',
         age: 63,
       },
+      {
+        first_name: 'Antonio',
+        last_name: 'Augusto',
+        age: 18,
+      },
     ],
     {},
   );
   },
 
-  async down (queryInterface, _Sequelize) {
+  async down (queryInterface, Sequelize) {
     return queryInterface.bulkDelete('Employees', null, {});
   }
 };
