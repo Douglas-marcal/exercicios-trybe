@@ -12,8 +12,17 @@ function addBook(bookInfo) {
   return Book.create({ ...bookInfo });
 }
 
+function updateBook(id, bookInfo) {
+  return Book.update({ ...bookInfo }, {
+    where: {
+      id
+    },
+  });
+}
+
 module.exports = {
   getAll,
   getById,
   addBook,
+  updateBook,
 };
