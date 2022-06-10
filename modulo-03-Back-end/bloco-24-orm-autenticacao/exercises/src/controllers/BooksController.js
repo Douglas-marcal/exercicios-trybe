@@ -40,7 +40,17 @@ async function updateBook(request, response) {
 
   if (!book) return response.status(404).json({ message: 'Book not found' });
 
-  response.status(200).json({ message: 'Book updated'});
+  response.status(200).json({ message: 'Book updated' });
+}
+
+async function deleteBook(request, response) {
+  const { id } = request.params;
+
+  const bookDeleted = await bookService.deleteBook(id);
+
+  if (!bookDeleted) return response.status(404).json({ message: 'Book not found' });
+
+  response.status(200).json({ message: 'Book deleted' })
 }
 
 module.exports = {
@@ -48,4 +58,5 @@ module.exports = {
   getById,
   addBook,
   updateBook,
+  deleteBook,
 };
